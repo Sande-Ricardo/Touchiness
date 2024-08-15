@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --prm1:#eef3ff;
+    --prm2: #e1e9fe;
+    --prm3: #c8d7fd;
+    --prm4: #a7bbfa;
+    --prm5: #8498f5;
+    --prm6: #6774ed;
+    --prm7: #4a4ce1;
+    --prm8: #3535b6;
+    --prm9: #3334a0;
+    --prm10: #30337f;
+    --prm11: #1c1c4a;
+
+    --scnd2: rgba(225, 233, 254, 0.4);
+    --scnd4: rgba(167, 186, 250, 0.4);
+    --scnd10: rgba(48, 51, 127, 0.2);
+
+    --rare: #555463;
+}
