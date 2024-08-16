@@ -1,0 +1,41 @@
+.container2{
+    height: 2.5rem;
+    
+    display: flex;
+    width: 100vw;
+    justify-content: right;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* background-color: aquamarine; */
+}
+
+.logo{
+    position: absolute;
+    left: 1rem;
+}
+
+.sections{
+    position: relative;
+    justify-self: end;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    /* background-color: antiquewhite; */
+
+}
+
+.sections > q{
+    /* width: min-content; */
+    /* padding: .5rem; */
+    /* display: inline-flex; */
+    background-color: #c196ea;
+}
+
+
+/* generar menu emergente para layout */
+@media (max-width:768px) {
+    .sections{
+        display: none;
+    }
+}
