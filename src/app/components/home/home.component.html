@@ -1,7 +1,17 @@
 <div class="container1">
+    <!-- <div class="abMe">
+        <a href="" class="a">asdsad</a>
+        <a href="" class="a">asdsad</a>
+    </div> -->
+
+    <app-about-me id="aboutMe" [userData]="userData"></app-about-me>
+    <app-skills id="skills" [userData]="userData"></app-skills>
+    <app-projects id="projects" [userData]="userData"></app-projects>
+    <app-contact id="contact"></app-contact>
+
+    <p (click)="crearUserData()"> crearPrueba</p>
+    <p (click)="obtenerPrueba()"> obtenerPrueba</p>
+
+
     <app-layout></app-layout>
-    <div class="abMe">
-        <a href="" class="a">asdsad</a>
-        <a href="" class="a">asdsad</a>
-    </div>
 </div>

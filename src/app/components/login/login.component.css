@@ -1,0 +1,67 @@
+.container20{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: aquamarine; */
+    
+}
+.subcontainer{
+    height: 35rem;
+    width: 20rem;
+    /* display: grid; */
+    /* grid-template-rows: 1fr 9fr; */
+
+    /* background-color: black; */
+    border: 1px solid hsl(0, 100%, 68%);
+}
+
+.subcontainer  > *{
+    /* margin: 1rem; */
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: calc(100% - 3.5rem);
+    width: 100%;
+    bottom: 0;
+
+
+    /* background-color: aqua; */
+}
+
+.inp{
+    /* position: relative; */
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /* background-color: yellowgreen; */
+}
+
+input{
+    /* position: relative; */
+    /* background-color: blue; */
+
+    width: 95%;
+    height: 3rem;
+}
+

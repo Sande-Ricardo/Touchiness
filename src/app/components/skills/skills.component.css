@@ -1,0 +1,40 @@
+.container4{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    /* top: 100vh; */
+
+    /* background-color: aqua; */
+}
+
+.subcontainer{
+    position: relative;
+    top:5rem;
+    height: calc(100vh - 5rem);
+    
+    display: grid;
+    grid-template-rows: 2fr 7fr 7fr;
+    /* gap: 2rem; */
+
+    /* background-color: bisque; */
+}
+
+.subcontainer > *{
+    margin: 1rem;
+    border: 1px solid #ff5a5a;
+    /* background-color: aqua; */
+}
+
+/* capaz que los relatives se puede boletear */
+.skills{
+    position: relative;
+}
+.technologies{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.softs{
+    position: relative;
+}

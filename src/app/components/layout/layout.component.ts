@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
 
+  goTo(id:string){
+    document.getElementById(id)?.scrollIntoView({behavior: 'smooth'})
+  }
+
 }
