@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/crystal.css';
+
+
 :root{
-    --prm1:#eef3ff;
+    /* --prm1:#eef3ff;
     --prm2: #e1e9fe;
     --prm3: #c8d7fd;
     --prm4: #a7bbfa;
@@ -16,7 +19,23 @@
     --scnd4: rgba(167, 186, 250, 0.4);
     --scnd10: rgba(48, 51, 127, 0.2);
 
-    --rare: #555463;
+    --rare: #555463; */
+
+    /* official palette */
+    --prm1:#001F68;
+    --prm2: #000C43;
+    --prm3: #07072D;
+    --prm4: #140647;
+    --prm5: #200461;
+    
+    --prmGrey: #15171d;
+
+    --prmFont1: #c7c8e6;
+    --prmFont2: #dedfed;
+
+
+    
+
 }
 
 *{

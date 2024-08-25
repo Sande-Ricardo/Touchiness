@@ -1,0 +1,6 @@
+.crystalEffect{
+    background-color: rgba(40, 40, 40, 0.4); /* Color de fondo con transparencia */
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.79); /* Sombra con transparencia */
+    background-size: cover;
+    backdrop-filter: blur(7px);
+}

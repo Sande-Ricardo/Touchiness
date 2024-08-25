@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+  standalone: true,
+  imports: [],
+  selector: 'app-background',
+  templateUrl: './background.component.html',
+  styleUrl: './background.component.css'
+})
+export class BackgroundComponent {
+
+}
