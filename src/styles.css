@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/styles/crystal.css';
+@import './assets//styles/cover.scss';
 
 
 :root{
@@ -30,8 +31,8 @@
     
     --prmGrey: #15171d;
 
-    --prmFont1: #c7c8e6;
-    --prmFont2: #dedfed;
+    --prmFont1: #c7d4e6;
+    --prmFont2: #d6eefb;
 
 
     
