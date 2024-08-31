@@ -4,10 +4,14 @@ export interface UserData {
     aboutMeTitle:string;
     aboutMeText:string;
     
-    skillImg:string[] | null;
-    skillTitle:string[];
-    skillText:string[];
+    skillHImg:string[] | null;
+    skillHTitle:string[];
+    skillHText:string[];
 
+    skillSImg:string[] | null;
+    skillSTitle:string[];
+    skillSText:string[];
+    
     skillSoft:string[];
 
     projectImg:string[] | null;

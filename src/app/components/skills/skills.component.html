@@ -1,24 +1,28 @@
 <div class="container4">
     <div class="subcontainer">
         <div class="skills">
-            <p>Skills</p>
+            <p>Habilidades</p>
         </div>
         <div class="technologies">
             <div class="frontend">
-                <p>Frontend</p>
-                <div class="subcontainer2">
-    
+                <p class="fbs">Frontend</p>
+                <div class="subcontainer2 crystalEffect">
+                    <!-- <app-h-skill [logo]="'hSkills/javascript.svg'" [ttl]="'JavaScript'" [desc]="''"></app-h-skill> -->
+                    <app-h-skill *ngFor="let skill of userData.skillHImg; let i = index" [logo]="skill" [ttl]="userData.skillHTitle[i]" ></app-h-skill>
+
                 </div>
             </div>
             <div class="backend">
-                <p>Backend</p>
-                <div class="subcontainer2">
+                <p class="fbs">Backend</p>
+                <div class="subcontainer2 crystalEffect">
+                    <!-- <app-h-skill [logo]="'hSkills/angular.svg'" [ttl]="'Java'" [desc]="''"></app-h-skill> -->
+                    <app-h-skill *ngFor="let skill of userData.skillSImg; let i = index" [logo]="skill" [ttl]="userData.skillSTitle[i]" ></app-h-skill>
                     
                 </div>
             </div>
         </div>
         <div class="softs">
-            <p>Soft skills</p>
+            <p class="fbs">Habilidades blandas</p>
             <div class="subcontainer3">
     
             </div>

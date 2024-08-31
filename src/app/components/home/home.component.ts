@@ -36,17 +36,37 @@ export class HomeComponent {
 
   crearUserData(){
     const user:UserData = {
-      aboutMeImg:null,
-      aboutMeTitle: "Web Develloper",
-      aboutMeText: "Emmm",
+      aboutMeImg: '',
+      aboutMeTitle: "Desarrollador",
+      aboutMeText: "Soy Sande Ricardo, un desarrollador web full-stack en constante aprendizaje, apasionado por crear soluciones digitales innovadoras. Con un enfoque en el backend, disfruto construyendo las bases sólidas de aplicaciones web escalables y eficientes.",
       
-      skillImg:null,
-      skillTitle:["skill 1"],
-      skillText:["python"],
+      skillHImg:[
+        'hSkills/typescript.svg',
+        'hSkills/angular.svg',
+        'hSkills/javascript.svg',
+        'hSkills/bootstrap.svg',
+        'hSkills/html.svg',
+        'hSkills/css.svg'
+      ],
+      skillHTitle:["TypeScript","Angular","JavaScript","Bootstrap","HTML","CSS"],
+      skillHText:["python"],
+
+      skillSImg:[
+        'hSkills/java.svg',
+        'hSkills/springboot.svg',
+        'hSkills/ruby.svg',
+        'hSkills/mysql.svg',
+        'hSkills/python.svg',
+        'hSkills/github.svg',
+        'hSkills/netlify.svg',
+        'hSkills/xamp.svg'
+      ],
+      skillSTitle:["Java","SpringBoot","Ruby","MySQL","Python","Git","Netlify","XAMP"],
+      skillSText:["python"],
 
       skillSoft:["proactivity"],
 
-      projectImg:null,
+      projectImg: null,
       projectTitle:["calculato"],
       projectText:["lorem"],
     };
@@ -56,5 +76,9 @@ export class HomeComponent {
 
   obtenerPrueba(){
     return this.firestoreService.getData();
+  }
+
+  obtenerdata(){
+    console.log(this.userData)
   }
 }

@@ -57,7 +57,7 @@
     margin: 1rem ;
     color: var(--prmFont2);
     font-size: 1.8rem;
-    font-family: system-ui;
+    font-family: var(--font2);
 
     filter: drop-shadow(0 0 2px black)
             drop-shadow(0 0 7px black)
@@ -68,6 +68,8 @@
     position: relative;
     color: var(--prmFont2);
     font-size: 1.15rem;
+    font-family: var(--font1);
+
 
     filter: drop-shadow(0 0 1px black)
             drop-shadow(0 0 4px black)

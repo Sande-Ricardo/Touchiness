@@ -10,5 +10,4 @@ import { UserData } from '../../interfaces/user-data';
 })
 export class SkillsComponent {
   @Input() userData!:UserData;
-
 }

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AboutMeComponent } from '../../components/about-me/about-me.component';
 import { ContactComponent } from '../../components/contact/contact.component';
+import { HSkillComponent } from '../../components/h-skill/h-skill.component';
 import { HomeComponent } from '../../components/home/home.component';
 import { LayoutComponent } from '../../components/layout/layout.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
@@ -17,7 +18,8 @@ import { HomeRoutingModule } from './home-routing.module';
     AboutMeComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    HSkillComponent
   ],
   imports: [
     CommonModule,

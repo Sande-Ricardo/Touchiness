@@ -11,6 +11,7 @@ export class FirestoreService {
   constructor(private firestore:Firestore) { 
     this.collRef = collection(this.firestore, 'userData');
     this.docRef = doc(this.firestore, 'userData', 'snPQSTLkzP8qyEPpkxlr');
+    // this.docRef = doc(this.firestore, 'userData', 'oKxVEex0oXfld9IaBrkr ');
   }
 
   // -------------------------------------  Variables  ---------------------------------------------
