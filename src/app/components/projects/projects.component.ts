@@ -11,4 +11,5 @@ import { UserData } from '../../interfaces/user-data';
 export class ProjectsComponent {
   @Input() userData!:UserData;
 
+  ex:string = '../../../../public/projects/management_dashboard.svg'
 }

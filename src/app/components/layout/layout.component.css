@@ -44,7 +44,7 @@
 .sections > p
 {
     font-weight: 600;
-    font-family: "Courier New", monospace;
+    font-family: var(--font1);
     color: var(--prmFont1);
 
 

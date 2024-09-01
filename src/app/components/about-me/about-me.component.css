@@ -57,11 +57,13 @@
     margin: 1rem ;
     color: var(--prmFont2);
     font-size: 1.8rem;
-    font-family: var(--font2);
+    font-family: var(--font1);
+    letter-spacing: 1.5px;
 
     filter: drop-shadow(0 0 2px black)
-            drop-shadow(0 0 7px black)
+            drop-shadow(0 0 7px black);
 }
+
 .text
 {
     margin: 1.5rem 2rem 2rem 2rem;

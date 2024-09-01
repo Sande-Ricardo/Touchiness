@@ -66,9 +66,11 @@ export class HomeComponent {
 
       skillSoft:["proactivity"],
 
-      projectImg: null,
+      projectImg: [],
       projectTitle:["calculato"],
       projectText:["lorem"],
+      projectLinkDemo:[],
+      projectLinkGitHub:[]
     };
 
     this.firestoreService.createData(user)

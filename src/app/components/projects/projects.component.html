@@ -1,10 +1,25 @@
 <div class="container5">
     <div class="subcontainer">
-        <div class="tittle">
-            Tittle
+        <div class="title">
+            <p>Proyectos</p>
         </div>
-        <div class="projectsGal">
-            Projects Gallery
+        <div class="projectsGal crystalEffect">
+            <div class="subcontainer2 ">
+
+                <div class="project" *ngFor="let project of userData.projectTitle; let i=index">
+                    <div class="titleProject">{{project}}</div>
+                    <div class="description">
+                        <p>{{userData.projectText[i]}}</p>
+                        <div class="links">
+                            <a href="{{userData.projectLinkDemo[i]}}">Demo</a>
+                            <a href="{{userData.projectLinkGitHub[i]}}">GitHub</a>
+                        </div>
+                    </div>
+                    <!-- <div class="background" style="--background:´url('../../../../public/projects/management_dashboard.svg')´"></div> -->
+                    <img src="{{userData.projectImg[i]}}" alt="" class="background">
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

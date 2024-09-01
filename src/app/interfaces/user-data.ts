@@ -14,7 +14,9 @@ export interface UserData {
     
     skillSoft:string[];
 
-    projectImg:string[] | null;
+    projectImg:string[];
     projectTitle:string[];
     projectText:string[];
+    projectLinkDemo:string[];
+    projectLinkGitHub:string[];
 }

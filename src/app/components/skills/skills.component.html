@@ -9,7 +9,6 @@
                 <div class="subcontainer2 crystalEffect">
                     <!-- <app-h-skill [logo]="'hSkills/javascript.svg'" [ttl]="'JavaScript'" [desc]="''"></app-h-skill> -->
                     <app-h-skill *ngFor="let skill of userData.skillHImg; let i = index" [logo]="skill" [ttl]="userData.skillHTitle[i]" ></app-h-skill>
-
                 </div>
             </div>
             <div class="backend">
@@ -17,14 +16,13 @@
                 <div class="subcontainer2 crystalEffect">
                     <!-- <app-h-skill [logo]="'hSkills/angular.svg'" [ttl]="'Java'" [desc]="''"></app-h-skill> -->
                     <app-h-skill *ngFor="let skill of userData.skillSImg; let i = index" [logo]="skill" [ttl]="userData.skillSTitle[i]" ></app-h-skill>
-                    
                 </div>
             </div>
         </div>
         <div class="softs">
             <p class="fbs">Habilidades blandas</p>
-            <div class="subcontainer3">
-    
+            <div class="subcontainer3 crystalEffect">
+                <p class="softSkill" *ngFor="let sSkill of userData.skillSoft">{{sSkill}}</p>
             </div>
         </div>
     </div>
