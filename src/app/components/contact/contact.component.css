@@ -1,4 +1,5 @@
-.container6{
+.container6
+{
     display: grid;
     position: relative;
     width: 100%;
@@ -6,15 +7,15 @@
     top: 0;
     grid-template-rows: 9fr 1fr;
     
-    border: blue 1px solid;
-    /* background-color: aqua; */
 }
 
-.container6 > *{
-    border: 1px solid hsl(0, 100%, 68%);
+.container6 > *
+{
+    /* border: 1px solid hsl(0, 100%, 68%); */
 }
 
-.columns{
+.columns
+{
     position: relative;
     height: 70%;
     top: 15%;
@@ -25,7 +26,8 @@
     /* border: 1px solid #a600ff; */
 }
 
-.columns > *{
+.columns > *
+{
     margin: 1rem;
 }
 
@@ -111,4 +113,74 @@
     filter: drop-shadow(0 0 2px white)
             drop-shadow(0 0 4px white)
             drop-shadow(0 0 8px white);
+}
+
+
+/* contacto */
+
+.socialMedia
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contact1
+{
+    width: 33%;
+}
+
+li
+{
+    margin: .6rem;
+    list-style-type: none;
+}
+li p
+{
+    position: relative;
+    width: 10rem;
+    left: 5rem;
+    color: var(--prmFont1);
+}
+
+.contact2
+{
+    position: absolute;
+    right: 4rem;
+    top: .5rem;
+}
+
+.contactlogo{
+    width:2rem;
+    height:2rem;
+    margin: .6rem 1.5rem .6rem 1.5rem;
+    opacity: .7;
+
+}
+.contactlogo:hover{
+    opacity: 1;
+    animation: xlr8 .3s ease;
+    transform: scale(1.4);
+    filter: drop-shadow(0 .16rem rgb(255, 255, 255))
+            drop-shadow(0 0 .5rem rgb(255, 255, 255))
+
+}
+
+@keyframes xlr8{
+    0%{
+        transform: scale(1);
+    }
+    40%{
+        transform : scale(.8)
+    }
+    100%{
+        transform: scale(1.4);
+    }
+}
+
+
+
+.null
+{
+    display: none;
 }
