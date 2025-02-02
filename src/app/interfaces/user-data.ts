@@ -11,6 +11,10 @@ export interface UserData {
     skillSImg:string[] | null;
     skillSTitle:string[];
     skillSText:string[];
+
+    skillTImg:string[] | null;
+    skillTTitle:string[];
+    skillTText:string[];
     
     skillSoft:string[];
 

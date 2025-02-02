@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="400mm"
+   viewBox="0 0 400 400"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:export-filename="render.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" /><defs
+     id="defs1" /><g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"><path
+       style="display:inline;fill:#000000"
+       d="m 46.4,274.20555 c 0,-76.85327 0.129962,-85.8445 1.257143,-86.97394 0.691428,-0.69282 1.363227,-1.25967 1.492886,-1.25967 0.129659,0 3.613944,1.60094 7.742857,3.55765 35.680597,16.90913 78.056414,12.17679 109.907114,-12.27392 20.8204,-15.98313 35.36183,-40.86723 39.99955,-68.44944 1.72704,-10.271313 3.96036,-17.379318 7.97932,-25.395867 8.53771,-17.03 23.81543,-31.20026 41.24362,-38.253926 10.44567,-4.22765 16.40123,-5.325329 29.17751,-5.377759 14.39949,-0.05909 22.12871,1.568382 33.83317,7.123946 9.71559,4.611543 15.82388,9.051772 23.85646,17.341709 10.21867,10.546079 16.25271,21.316762 20.0902,35.860767 1.73753,6.5852 2.0322,9.40691 2.01907,19.33378 -0.019,14.32656 -2.11417,23.5174 -8.1319,35.67134 -10.44221,21.09001 -28.81428,35.91179 -52.36474,42.2456 -5.94546,1.59901 -9.10547,1.79134 -36.90226,2.246 -25.01814,0.40922 -30.98028,0.72288 -33.67779,1.77176 -13.22982,5.14417 -21.30911,13.15054 -25.62099,25.38977 l -1.86747,5.30078 -0.0169,63.92785 -0.0169,63.92786 h -80 -80 z"
+       id="path1" /></g></svg>

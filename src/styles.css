@@ -33,6 +33,7 @@
 
     --prmFont1: #c7d4e6;
     --prmFont2: #d6eefb;
+    --prmFont3: #e0e7ec;
 
 
     
@@ -40,6 +41,12 @@
     --font2: Copperplate, Copperplate Gothic Light, fantasy;
     --font3: 'Courier New', Courier, monospace;
     --font4: "Courier New", monospace;
+
+    --shadow: rgba(0, 0, 0, 0.4);
+    --light-shadow: rgba(201, 201, 201, 0.629);
+    --background: #0e0f12;
+    --details: rgba(190, 190, 190, 0.2);
+    --details2: rgba(190, 190, 190, 0.1);
 
 }
 

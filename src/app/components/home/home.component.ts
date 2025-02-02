@@ -64,6 +64,10 @@ export class HomeComponent {
       skillSTitle:["Java","SpringBoot","Ruby","MySQL","Python","Git","Netlify","XAMP"],
       skillSText:["python"],
 
+      skillTImg:[],
+      skillTTitle:[],
+      skillTText:[],
+
       skillSoft:["proactivity"],
 
       projectImg: [],
