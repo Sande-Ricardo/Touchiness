@@ -4,7 +4,7 @@
             <p>Proyectos</p>
         </div>
         <div class="projectsGal crystalEffect">
-            <div class="subcontainer2 ">
+            <div class="subcontainer2 " *ngIf="userData">
 
                 <div class="project" *ngFor="let project of userData.projectTitle; let i=index">
                     <div class="titleProject">{{project}}</div>

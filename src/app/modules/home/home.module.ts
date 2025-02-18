@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from '../../components/about-me/about-me.component';
 import { ContactComponent } from '../../components/contact/contact.component';
 import { HSkillComponent } from '../../components/h-skill/h-skill.component';
@@ -9,7 +11,6 @@ import { LayoutComponent } from '../../components/layout/layout.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { SkillsComponent } from '../../components/skills/skills.component';
 import { HomeRoutingModule } from './home-routing.module';
-
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { HomeRoutingModule } from './home-routing.module';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FormsModule,
+    // BrowserAnimationsModule
   ]
 })
 export class HomeModule { }

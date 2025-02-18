@@ -3,13 +3,15 @@
         <div class="subcontainer">
             <p>Contactate conmigo</p>
             <div class="form crystalEffect">
-                <form action="">
-                    <input class="line crystalEffect" type="text" placeholder="Nombre">
-                    <input class="line crystalEffect" type="text" placeholder="Email">
+                <form (ngSubmit)="addMessage()">
+                    <input class="line crystalEffect" type="text" placeholder="Nombre" [(ngModel)]="newMessage.name" name="name">
+                    <input class="line crystalEffect" type="text" placeholder="Email" [(ngModel)]="newMessage.email" name="email">
                     <!-- <input class="cont" type="text" placeholder="Asunto"> -->
-                    <textarea class="cont crystalEffect" name="Asunto" placeholder="Asunto"></textarea>
+                    <textarea class="cont crystalEffect" placeholder="Asunto" [(ngModel)]="newMessage.message" name="email"></textarea>
                     <input class="line crystalEffect" type="submit" value="Enviar">
+                    <!-- <input class="line crystalEffect" type="button" value="Enviar"> -->
                 </form>
+                <span class="verificator" [ngClass]="fade">✓</span>
             </div>
         </div>
         <div class="image">
@@ -19,8 +21,10 @@
     <div class="socialMedia crystalEffect">
         <ul class="contact1">
             <!-- <li><p>Email</p></li> -->
-            <li class=""><p><a href="https://www.linkedin.com/in/ricardo-alberto-ram%C3%ADrez-sande-15374a295/">LinkedIn</a></p></li>
-            <li class=""><p><a href="https://github.com/RamirezRish">GitHub</a></p></li>
+            <!-- <li class=""><p><a href="https://www.linkedin.com/in/sande-ricardo/">LinkedIn</a></p></li> -->
+            <!-- <li class=""><p><a href="https://github.com/Sande-Ricardo">GitHub</a></p></li> -->
+            <li class=""> <span (click)="openWindow('https://www.linkedin.com/in/sande-ricardo/')">Linkedin</span> </li>
+            <li class=""> <span (click)="openWindow('https://github.com/Sande-Ricardo')">GitHub</span> </li>
             <li class="contact2">
                 <a href="https://www.github.com">   <img class="contactlogo null" src="contact/igimg.png"    alt=""></a>
                 <a href="https://www.instagram.com"><img class="contactlogo null" src="contact/igimg.png"    alt=""></a>

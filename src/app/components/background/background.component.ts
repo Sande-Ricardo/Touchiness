@@ -13,14 +13,14 @@ export class BackgroundComponent implements OnInit{
   fade: number[] = [];
 
   ngOnInit(): void {
-    this.generateStars(30); // Genera 100 estrellas
+    this.generateStars(9); // Genera 100 estrellas
   }
 
   generateStars(count: number): void {
     for (let i = 0; i < count; i++) {
       const star = {
         size: Math.random() * 3 + 1, // Tamaño entre 1px y 4px
-        duration: Math.random() * 5 + 2, // Duración entre 2s y 7s
+        duration: Math.random() * 2.5 + .3, // Duración entre 2s y 7s
         // duration: 15,
         delay: Math.random() * 5, // Retraso entre 0s y 5s
         startX: Math.random() * 100, // Posición inicial horizontal (0% a 100%)
@@ -29,7 +29,7 @@ export class BackgroundComponent implements OnInit{
       this.fade.push(star.size)
       this.stars.push(star);
     }
-    console.log(this.fade);
+    // console.log(this.fade);
     
   }
 

@@ -108,6 +108,32 @@
     border: solid 1px var(--details);
 }
 
+.verificator{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    right: .7rem;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    color: var(--prmFont2);
+    text-shadow: 0 0 10px var(--prmFont3);
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+}
+.fadeIn{
+    opacity: 1;
+}
+.fadeOut{
+    opacity: 0;
+}
+
+
 .image {
     display: flex;
     align-items: center;
@@ -137,16 +163,17 @@ li {
     list-style-type: none;
 }
 
-li p {
+li span{
     position: relative;
     width: 10rem;
     left: 5rem;
     color: var(--prmFont1);
 }
 
-.contact1 a{
+.contact1 span{
     color: var(--prmFont2);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .contact2 {

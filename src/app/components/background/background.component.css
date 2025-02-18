@@ -80,12 +80,12 @@ containerB {
 
 @keyframes fall {
     0% {
-        opacity: 1;
+        opacity: 7;
         transform: translate(100vw, -100vh);
     }
 
     100% {
-        opacity: 1;
+        opacity: 9;
         transform: translate(-100vw, 100vh);
     }
 }
