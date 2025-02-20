@@ -171,9 +171,17 @@ li span{
 }
 
 .contact1 span{
-    color: var(--prmFont2);
+    color: var(--prmFont1);
     text-decoration: none;
     cursor: pointer;
+    transition: .3s;
+}
+
+.contact1 span:hover{
+    color: var(--prmFont2);
+    filter: drop-shadow(0 0 7px var(--prmFont1));
+    cursor: pointer;
+
 }
 
 .contact2 {

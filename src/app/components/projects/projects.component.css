@@ -130,14 +130,14 @@
     /* font */
     color: var(--prmFont1);
     font-size: .8rem;
-    text-align: justify;
+    text-align: center;
     
     filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.535))
     drop-shadow(0 0 5px rgba(0, 0, 0, 0.591));
     
     transform: scale(1.5);
     opacity: 0;
-    transition: ease .5s;
+    transition: ease .3s;
 }
 
 .description:hover
