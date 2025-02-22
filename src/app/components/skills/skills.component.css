@@ -139,6 +139,36 @@
             drop-shadow(0 0 5px black);
 }
 
+.fixDisplay > p{
+    height: fit-content;
+}
 
-
-
+@media (max-width: 768px){
+    .container4{
+        height: 200vh;
+    }
+    .subcontainer{
+        grid-template-rows: .8fr 7fr 7fr;
+        height: calc(200vh - 2rem);
+        top: 2rem;
+    }
+    .technologies{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        /* border: 1px solid red; */
+        justify-content: center;
+    }
+    .subcontainer2{
+        width: 80vw;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-size: .8rem;
+    }
+    .fixDisplay{
+        grid-template-columns: 1fr;
+    }
+}

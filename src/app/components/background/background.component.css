@@ -131,3 +131,11 @@ containerB {
         filter: brightness(100%);
     }
 }
+
+@media (max-width: 768px){
+    .star::after{
+        top: -340%;
+        left: 100%;
+        transform: rotate(28deg)
+    }
+}
