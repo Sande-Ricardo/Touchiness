@@ -138,6 +138,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    filter: var(--invert)
+        brightness(1.1);
 }
 
 .image img {
@@ -179,7 +182,7 @@ li span{
 
 .contact1 span:hover{
     color: var(--prmFont2);
-    filter: drop-shadow(0 0 7px var(--prmFont1));
+    filter: drop-shadow(0 0 7px var(--prmGrey));
     cursor: pointer;
 
 }
@@ -262,7 +265,8 @@ li span{
         height: 2rem;
         border-radius: 50%;
     
-        filter: invert(89%) sepia(12%) saturate(285%) hue-rotate(162deg) brightness(103%) contrast(96%);
+        transition: .5s;
+        filter: var(--filter);
         
         img{
             width: 100%;

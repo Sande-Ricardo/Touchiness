@@ -3,6 +3,11 @@
 
     </div>
     <div class="sections">
+        <span class="toggleTheme" [ngClass]="currentTheme" (click)="toggleTheme()">
+            <div></div>
+        </span>
+        <!-- <p (click)="toggleTheme()" class="tosggleTheme" >Theme</p> -->
+        
         <p (click)="goTo('aboutMe')">Sobre mí</p>
         <p (click)="goTo('skills')">Habilidades</p>
         <p (click)="goTo('projects')">Proyectos</p>
@@ -23,3 +28,9 @@
         <img src="contact/message.svg" alt="">
     </span>
 </div>
+<div class="aux-menu">
+    <span class="toggleTheme" [ngClass]="currentTheme" (click)="toggleTheme()">
+        <div></div>
+    </span>
+</div>
+
