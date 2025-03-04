@@ -26,16 +26,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.7924876"
-     inkscape:cx="161.22845"
-     inkscape:cy="201.67504"
+     inkscape:zoom="1.2674801"
+     inkscape:cx="175.15067"
+     inkscape:cy="166.07755"
      inkscape:window-width="1280"
      inkscape:window-height="961"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:export-bgcolor="#ffffffff" /><defs
+     inkscape:export-bgcolor="#000c43ff" /><defs
      id="defs1"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath2"><path
@@ -45,7 +45,7 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"><path
-       style="opacity:1;fill:#000000;stroke:#001010;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:27.2;paint-order:markers fill stroke"
+       style="opacity:1;fill:#c7d4e6;fill-opacity:1;stroke:#001010;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:27.2;paint-order:markers fill stroke"
        id="path1"
        sodipodi:type="arc"
        sodipodi:cx="32.414429"
@@ -58,4 +58,4 @@
        sodipodi:arc-type="chord"
        d="M 44.795491,31.609153 A 12.381153,12.381153 0 0 1 32.366968,43.942692 12.381153,12.381153 0 0 1 20.033366,31.514231 12.381153,12.381153 0 0 1 32.461766,19.180568 12.381153,12.381153 0 0 1 44.795492,31.608905 Z"
        clip-path="url(#clipPath2)"
-       transform="matrix(4.0383962,0,0,4.0383962,-80.902306,-77.458368)" /></g></svg>
+       transform="matrix(4.0679775,0,0,4.0512389,-82.227416,-77.704696)" /></g></svg>

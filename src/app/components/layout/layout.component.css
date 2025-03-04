@@ -129,13 +129,13 @@
 
 .aux-menu{
     display: none;
-    position: fixed;
+    position: none;
     top: 0;
     left: 0;
     display: flex;
     width: 100vw;
     height: 3rem;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 
@@ -158,6 +158,8 @@
 
     .aux-menu{
         display: flex;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0);
     }
 
 }
