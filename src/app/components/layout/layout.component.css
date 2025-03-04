@@ -129,18 +129,18 @@
 
 .aux-menu{
     display: none;
-    position: none;
+    /* position: none; */
     top: 0;
     left: 0;
-    display: flex;
     width: 100vw;
     height: 3rem;
 }
 
 
+
 /* generar menu emergente para layout */
 @media (max-width:768px)
-{W
+{
     .sections{
         display: none;
     }
@@ -157,7 +157,7 @@
 
     .aux-menu{
         display: flex;
-        position: fixed;
+        /* position: fixed; */
     }
 
 }
