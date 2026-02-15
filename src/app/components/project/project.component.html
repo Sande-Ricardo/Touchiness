@@ -1,0 +1,33 @@
+<div class="container2">
+    <div class="subcontainer">
+        <div class="header">
+            <div class="basic crystalEffect3">
+                <h1 class="title">{{project?.title}}</h1>
+                <p class="status">{{project?.status}}</p>
+                <p class="description">{{project?.description}}</p>
+                <div class="moreInfo">
+                    <div class="technologies"></div>
+                    <div class="links">
+                        <a [href]="project?.githubLink" *ngIf="project?.githubLink"><p>GitHub</p></a>
+                        <a [href]="project?.demoLink" *ngIf="project?.demoLink">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img [src]="project?.logoLink" alt="Logo del proyecto" *ngIf="project?.logoLink">
+            </div>
+        </div>
+        <div class="gallery">
+            <p class="subtitle">Interfaz de la aplicación</p>
+            <div class="galleryContainer crystalEffect3"></div>
+        </div>
+        <div class="readmeLector crystalEffect3"> </div>
+    </div>
+
+    <div class="layout">
+        <div class="logoMain"></div>
+        <div class="sections">
+            <a href="../../"><p>Home</p></a>
+        </div>
+    </div>
+</div>

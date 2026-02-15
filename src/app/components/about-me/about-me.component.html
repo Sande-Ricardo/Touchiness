@@ -1,6 +1,7 @@
 <div class="container3">
     <div class="fade">
-        <div class="profile"></div>
+        <div class="profile" [style.--cld-img]="optimizedUrlImg()"></div>
+        <!-- <app-cld-img class="prf" [publicId]="'profile_ofpy0q'" [width]="400" [height]="400"></app-cld-img> -->
     </div>
     <div class="info">
         <div class="subcontainer crystalEffect" *ngIf="userData">
@@ -11,7 +12,4 @@
             <!-- <div class="cover"></div> -->
         </div>
     </div>
-    <!-- <a href="" class="crystalEffect">{{userData.aboutMeText}}</a> -->
-    <!-- <a href="" class="a crystalEffect">photo/illustration</a> -->
-    <!-- <img class="a crystalEffect" src="" alt=""> -->
 </div>

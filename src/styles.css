@@ -4,23 +4,6 @@
 
 
 :root{
-    /* --prm1:#eef3ff;
-    --prm2: #e1e9fe;
-    --prm3: #c8d7fd;
-    --prm4: #a7bbfa;
-    --prm5: #8498f5;
-    --prm6: #6774ed;
-    --prm7: #4a4ce1;
-    --prm8: #3535b6;
-    --prm9: #3334a0;
-    --prm10: #30337f;
-    --prm11: #1c1c4a;
-
-    --scnd2: rgba(225, 233, 254, 0.4);
-    --scnd4: rgba(167, 186, 250, 0.4);
-    --scnd10: rgba(48, 51, 127, 0.2);
-
-    --rare: #555463; */
 
     /* official palette */
     --prm1:#001F68;
@@ -34,6 +17,7 @@
     --prmFont1: #c7d4e6;
     --prmFont2: #d6eefb;
     --prmFont3: #e0e7ec;
+    --prmFont4: #aec4d1;
 
     --font-shadow: #d6eefb;
     
@@ -56,6 +40,12 @@
 
     --crystal-back:rgba(40, 40, 40, 0.4);
     --crystal-shadow:rgba(2, 2, 2, 0.79);
+    --crystal-back: rgba(20, 20, 30, 0.65);
+    --crystal-border: rgba(255, 255, 255, 0.12);
+    --crystal-glow: rgba(255, 255, 255, 0.03);
+    --crystal-highlight: rgba(255, 255, 255, 0.08);
+    --crystal-shadow-light: rgba(0, 0, 0, 0.3);
+    --crystal-shadow-medium: rgba(0, 0, 0, 0.5);
 
     --fade1:rgba(0, 0, 0, .3);
     --fade2:rgba(0, 0, 0, .8);

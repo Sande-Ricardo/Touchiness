@@ -1,7 +1,120 @@
-.crystalEffect{
-    background-color: var(--crystal-back); /* Color de fondo con transparencia */
-    box-shadow: 0 0 10px var(--crystal-shadow); /* Sombra con transparencia */
+.crystalEffect {
+    background-color: var(--crystal-back);
+    box-shadow: 0 0 10px var(--crystal-shadow);
     background-size: cover;
     backdrop-filter: blur(7px);
     border: 1px solid var(--details);
+}
+
+.crystalEffect2 {
+    background-color: var(--crystal-back);
+    box-shadow: 0 0 10px var(--crystal-shadow);
+    background-size: cover;
+    backdrop-filter: blur(30px);
+    border: 1px solid var(--details);
+}
+
+.crystalEffect2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+}
+
+.crystalEffect3 {
+    background: linear-gradient(135deg,
+            var(--crystal-back) 0%,
+            rgba(20, 20, 30, 0.55) 100%);
+
+    backdrop-filter: blur(45px) saturate(120%);
+    -webkit-backdrop-filter: blur(45px) saturate(120%);
+
+    box-shadow:
+        0 8px 32px var(--crystal-shadow),
+        0 2px 8px var(--crystal-shadow-light),
+        inset 0 1px 0 var(--crystal-highlight),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+
+    border: 1px solid var(--crystal-border);
+    border-radius: 0;
+
+    will-change: transform, opacity;
+    transform: translateZ(0);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    isolation: isolate;
+    position: relative;
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.crystalEffect3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: radial-gradient(circle at 20% 20%,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(255, 255, 255, 0.08) 20%,
+            rgba(255, 255, 255, 0.02) 40%,
+            transparent 70%);
+
+    border-radius: inherit;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}
+
+.crystalEffect3::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+
+    background: linear-gradient(135deg,
+            var(--crystal-glow) 0%,
+            transparent 50%,
+            transparent 100%);
+
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.crystalEffect3:hover {
+    box-shadow:
+        0 12px 48px var(--crystal-shadow),
+        0 4px 12px var(--crystal-shadow-light),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px) translateZ(0);
+}
+
+.crystalEffect3:focus-visible {
+    outline: 2px solid rgba(100, 150, 255, 0.6);
+    outline-offset: 2px;
+}
+
+.crystalEffect3--text {
+    backdrop-filter: blur(50px) saturate(140%);
+    -webkit-backdrop-filter: blur(50px) saturate(140%);
+    background: linear-gradient(135deg,
+            rgba(20, 20, 30, 0.75) 0%,
+            rgba(20, 20, 30, 0.65) 100%);
+}
+
+@supports not (backdrop-filter: blur(45px)) {
+    .crystalEffect3 {
+        background: rgba(20, 20, 30, 0.85);
+    }
 }

@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, computed, input, Input } from '@angular/core';
+import { CloudinaryService } from '../../core/services/cloudinary.service';
 import { UserData } from '../../interfaces/user-data';
 
 @Component({
@@ -10,4 +11,21 @@ import { UserData } from '../../interfaces/user-data';
 })
 export class AboutMeComponent {
   @Input() userData!:UserData;
+
+
+  constructor(private cloudinarySv:CloudinaryService) { }
+
+  publicId = input<string>('dpbrt2qic');
+
+  optimizedUrlImg = computed(() => {
+
+    const urlImg = this.cloudinarySv.getimage(this.publicId())
+      .format('webp')
+      .quality('auto')
+      .toURL();
+
+    console.log(urlImg);
+    return urlImg
+    
+  });
 }
