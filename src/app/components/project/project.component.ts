@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AuxiliarLayout, Layout } from '../../interfaces/layout';
 import { Project } from '../../interfaces/project';
 import { FirestoreService } from '../../services/firestore.service';
 
@@ -12,7 +13,7 @@ import { FirestoreService } from '../../services/firestore.service';
 export class ProjectComponent {
   
   constructor(
-    private route:ActivatedRoute, 
+    private route:ActivatedRoute,
     private firestoreSv:FirestoreService
   ) { }
   
@@ -24,6 +25,10 @@ export class ProjectComponent {
       }
     })
   }
+
+  layoutData:Layout[] = [{title:'Home', url:'../', isById:false}];
+  auxiliarLayoutData:AuxiliarLayout[] = [{url:'../../', iconUrl:'', alt:'', isById:false}];
+
 
   projectRoute: string  | null = null;
 

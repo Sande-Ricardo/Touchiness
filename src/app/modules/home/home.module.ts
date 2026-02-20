@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from '../../components/about-me/about-me.component';
 import { CldImgComponent } from '../../components/cld-img/cld-img.component';
 import { ContactComponent } from '../../components/contact/contact.component';
@@ -16,7 +15,6 @@ import { HomeRoutingModule } from './home-routing.module';
 @NgModule({
   declarations: [
     HomeComponent,
-    LayoutComponent,
     AboutMeComponent,
     SkillsComponent,
     ProjectsComponent,
@@ -27,7 +25,8 @@ import { HomeRoutingModule } from './home-routing.module';
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    CldImgComponent
+    CldImgComponent,
+    LayoutComponent
     // BrowserAnimationsModule
   ]
 })

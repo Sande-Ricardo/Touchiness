@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { AuxiliarLayout, Layout } from '../../interfaces/layout';
 import { UserData } from '../../interfaces/user-data';
 import { FirestoreService } from '../../services/firestore.service';
 
 @Component({
   selector: 'app-home',
   standalone: false,
-  // imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -30,6 +30,9 @@ export class HomeComponent {
   // -------------------------------------  Variables  ---------------------------------------------
 
   userData!:UserData;
+
+  layoutData:Layout[] = [{title: 'Sobre mí', url: 'aboutMe',isById:true},{title: 'Habilidades', url: 'skills',isById:true},{title: 'Proyectos', url: 'projects',isById:true},{title: 'Contacto', url: 'contact',isById:true}];
+  auxiliarLayoutData:AuxiliarLayout[] = [{url:'aboutMe', iconUrl:'img/abme.svg', alt:'Sobre mí', isById:true},{url:'skills', iconUrl:'img/skills.svg', alt:'Habilidades', isById:true},{url:'projects', iconUrl:'img/proy.svg', alt:'Proyectos', isById:true}]
   
   // -----------------------------------------------------------------------------------------------
   

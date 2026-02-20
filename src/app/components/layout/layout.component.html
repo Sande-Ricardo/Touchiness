@@ -1,31 +1,17 @@
 <div class="container2">
-    <div class="logo">
-
+    <div class="logo" (click)="goToHome()">
     </div>
     <div class="sections">
         <span class="toggleTheme" [ngClass]="currentTheme" (click)="toggleTheme()">
             <div></div>
         </span>
         <!-- <p (click)="toggleTheme()" class="tosggleTheme" >Theme</p> -->
-        
-        <p (click)="goTo('aboutMe')">Sobre mí</p>
-        <p (click)="goTo('skills')">Habilidades</p>
-        <p (click)="goTo('projects')">Proyectos</p>
-        <p (click)="goTo('contact')">Contacto</p>
+        <p *ngFor="let item of layoutData(), let i = index" (click)="goTo(item.url,i)">{{item.title}}</p>
     </div>
 </div>
 <div class="aux-container">
-    <span class="icon" (click)="goTo('aboutMe')">
-        <img src="img/abme.svg" alt="">
-    </span>
-    <span class="icon" (click)="goTo('skills')">
-        <img src="img/skills.svg" alt="">
-    </span>
-    <span class="icon" (click)="goTo('projects')">
-        <img src="contact/projects.svg" alt="">
-    </span>
-    <span class="icon" (click)="goTo('contact')">
-        <img src="contact/message.svg" alt="">
+    <span *ngFor="let item of auxiliarLayoutData(), let i = index" class="icon" (click)="goTo(item.url,i)">
+        <img [src]="item.iconUrl" [alt]="item.alt">
     </span>
 </div>
 <div class="aux-menu">
