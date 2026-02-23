@@ -13,15 +13,18 @@
         width: 100%;
 
         display: grid;
-        grid-template-rows: 15rem 25rem 25rem;
+        grid-template-rows: 15rem 25rem auto;
         justify-items: center;
 
         .header, .gallery, .readmeLector{
             position: relative;
             width: 90vw;
-    
+            
             margin: 1.5rem 0;
             /* background-color: red; */
+        }
+        .readmeLector{
+            min-height: 5rem;
         }
     }
 }
@@ -117,11 +120,16 @@
         }
     }
     .logo{
+        display: flex;
+        justify-content: center;
         position: relative;
         width: 30%;
         height: 100%;
         
-        border: rgb(171, 105, 105) 1px solid;
+        img{
+            position: absolute;
+            height: 100%;
+        }
     }
 }
 
@@ -194,7 +202,13 @@
         justify-content: space-around;
         align-items: center;
 
-        
+        .background{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -203,6 +217,10 @@
     font-size: 1.5rem;
     font-weight: 500;
     margin: 1rem 0;
+    text-shadow:
+        1px 1px 5px var(--shadow),
+        1px 1px 3px var(--shadow),
+        1px 1px 1px var(--shadow);
 }
 
 @media (max-width: 768px)

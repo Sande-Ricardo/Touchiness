@@ -1,0 +1,28 @@
+<div class="container21">
+    @if($images().length > 0){
+        <div class="viewer-container" (swipeleft)="next()" (swiperight)="previous()">
+            @for (img of $images(); track img.url; let i = $index) {
+                <div class="slide" [class.active]="i === selectedIndex">
+                    @if (i === selectedIndex) {
+                    <img [src]="img.url" [alt]="img.alt"  loading="lazy">
+                    <span class="cover" (click)="openFullscreen()"></span>
+                    }
+                </div>
+            }
+            <button class="prev" (click)="previous()">‹</button>
+            <button class="next" (click)="next()">›</button>
+        </div>
+    } @else {
+        <p>Sin contenido</p>
+        <!-- <div class="loader">Cargando galería...</div> -->
+    }
+</div>
+
+@if (watchFull && $images().length > 0) {
+    <div class="lightbox-overlay" (click)="watchFull = false">
+        <div class="lightbox-content" (click)="$event.stopPropagation()">
+            <img [src]="$images()[selectedIndex].url" class="full-img">
+            <button class="close-btn" (click)="watchFull = false">&times;</button>
+        </div>
+    </div>
+}

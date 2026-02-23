@@ -3,7 +3,7 @@ export interface Project {
     description: string;
     readmeLink: string;
     logoLink: string;
-    setImage: ImgDetail[];
+    galleryLinks: ImgDetail[];
     slug: string;
 
     dynamicUrl: string;
@@ -16,7 +16,7 @@ export interface Project {
 }
 
 export interface ImgDetail {
-    imgLink: string;
+    url: string;
     alt: string;
     
 }

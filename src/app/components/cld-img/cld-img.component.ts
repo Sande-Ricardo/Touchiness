@@ -22,8 +22,6 @@ import { CloudinaryService } from '../../core/services/cloudinary.service';
     }
     .image-container {
       display: block;
-      // width: 100%;
-      // height: auto;
     }
     advanced-image {
       width: 100%;

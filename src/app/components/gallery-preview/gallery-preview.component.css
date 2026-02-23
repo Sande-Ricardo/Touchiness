@@ -1,0 +1,113 @@
+.container21 {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 16 / 9; */
+    /* Mantiene proporción sin importar el ancho */
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.viewer-container {
+    width: 100%;
+    height: 100%;
+    display: flexbox;
+    align-content: center;
+    position: relative;
+}
+
+/* 2. Evitar apilamiento: Solo la activa es visible y ocupa el espacio */
+.slide {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000000d9; */
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-color: red; */
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* O 'contain' si no quieres recortar nada */
+    cursor: zoom-in;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 0;
+    /* transform: translateY(-50%); */
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    z-index: 1;
+    transition: ease 0.3s;
+    opacity: 0.3;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    opacity: .9;
+}
+
+/* 3. FIX Pantalla Completa: FIXED ignora el position:relative del padre */
+.lightbox-overlay {
+    position: fixed;
+    /* Esto rompe el límite del contenedor pequeño */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    /* Por encima de todo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 1;
+}

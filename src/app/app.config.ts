@@ -1,13 +1,24 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom, Injectable, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
+import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { HAMMER_GESTURE_CONFIG, HammerGestureConfig, HammerModule } from '@angular/platform-browser';
+import { MarkdownModule } from 'ngx-markdown';
 import { routes } from './app.routes';
+
+@Injectable()
+export class MyHammerConfig extends HammerGestureConfig  {
+  override overrides ={
+    swipe:{direction:6}
+  };
+}
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
+    provideHttpClient(),
     provideRouter(routes),
     provideFirebaseApp(() => initializeApp(
       {
@@ -21,5 +32,14 @@ export const appConfig: ApplicationConfig = {
         "measurementId":"G-NN1B9436WN"
       }
     )),
-    provideFirestore(() => getFirestore())]
+    provideFirestore(() => getFirestore()),
+    importProvidersFrom([
+      HammerModule,
+      MarkdownModule.forRoot(
+        {loader: HttpClient}
+      )
+    ]),
+    {provide:HAMMER_GESTURE_CONFIG, useClass: MyHammerConfig}
+  ]
 };
+
