@@ -17,5 +17,10 @@ export const routes: Routes = [
         path: 'project',
         loadChildren: () =>
             import('./modules/project/project.module').then(m => m.ProjectModule)
+    },
+    {
+        path: '**',
+        redirectTo: ''
     }
+
 ];

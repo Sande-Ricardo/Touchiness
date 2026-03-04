@@ -4,7 +4,7 @@ A modern, dynamic, and interactive personal web portfolio designed to showcase p
 
 This project was built with [Angular 18](https://angular.dev/) and integrates robust services for backend management and media delivery.
 
-## 🚀 Features
+## Features
 
 - **Interactive UI**: Fluid animations and touch gesture support powered by `@angular/animations` and `hammerjs`.
 - **Dynamic Content**: Backed by **Firebase Firestore** to manage real-time data for projects, skills, and configuration.
