@@ -22,7 +22,6 @@ export class HSkillComponent {
 
   $logo = input<String>('');
 
-  @Input() logo!:String;
   @Input() ttl!:String;
   @Input() desc!:String;
 

@@ -15,7 +15,7 @@
                 <p class="fbs">Backend</p>
                 <div class="subcontainer2 crystalEffect">
                     <!-- <app-h-skill [logo]="'hSkills/angular.svg'" [ttl]="'Java'" [desc]="''"></app-h-skill> -->
-                    <app-h-skill *ngFor="let skill of userData.skillSImg; let i = index" [logo]="skill" [ttl]="userData.skillSTitle[i]" ></app-h-skill>
+                    <app-h-skill *ngFor="let skill of userData.skillSImg; let i = index" [$logo]="skill" [ttl]="userData.skillSTitle[i]" ></app-h-skill>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
                 <p class="fbs">Herramientas</p>
                 <div class="subcontainer2 crystalEffect">
                     <!-- <app-h-skill [logo]="'hSkills/angular.svg'" [ttl]="'Java'" [desc]="''"></app-h-skill> -->
-                    <app-h-skill *ngFor="let skill of userData.skillTImg; let i = index" [logo]="skill" [ttl]="userData.skillTTitle[i]" ></app-h-skill>
+                    <app-h-skill *ngFor="let skill of userData.skillTImg; let i = index" [$logo]="skill" [ttl]="userData.skillTTitle[i]" ></app-h-skill>
                 </div>
             </div>
             <div class="">
