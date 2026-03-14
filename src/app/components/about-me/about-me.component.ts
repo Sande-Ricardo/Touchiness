@@ -15,7 +15,7 @@ export class AboutMeComponent {
 
   constructor(private cloudinarySv:CloudinaryService) { }
 
-  publicId = input<string>('dpbrt2qic');
+  publicId = input<string>('profile');
 
   optimizedUrlImg = computed(() => {
 

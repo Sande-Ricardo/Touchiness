@@ -7,10 +7,12 @@ import { Cloudinary } from '@cloudinary/url-gen';
 export class CloudinaryService {
   readonly cld:Cloudinary;
 
-  constructor() { 
+  cloudName:string = 'dpbrt2qic';
+
+  constructor() {
     this.cld = new Cloudinary({
       cloud: {
-        cloudName: 'dpbrt2qic'
+        cloudName: this.cloudName
       }
     });
     console.log("Cloudinary inicialized");
